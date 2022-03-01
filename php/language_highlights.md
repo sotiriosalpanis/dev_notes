@@ -90,4 +90,72 @@ $greet('World');
 $greet('PHP');
 ?>
 ```
+
 **Anonymous functions documentation: [https://www.php.net/functions.anonymous](https://www.php.net/functions.anonymous)**
+
+## Meta Programming
+
+- various forms i.e. Magic Methods, [Reflection](https://www.php.net/intro.reflection) and [Overloading](https://www.php.net/language.oop5.overloading)
+
+### Magic Methods
+
+- special methods that override PHP's default action
+- all methods beginning with `__` are reserved for php
+- e.g. `__toString()`: method that allows a class to decide how it'll react when treated like a string:
+
+```php
+<?php
+// Declare a simple class
+class TestClass
+{
+    public $foo;
+
+    public function __construct($foo)
+    {
+        $this->foo = $foo;
+    }
+
+    public function __toString()
+    {
+        return $this->foo;
+    }
+}
+
+$class = new TestClass('Hello');
+echo $class;
+?>
+```
+
+- full list of magic methods: `__construct()`, `__destruct()`, `__call()`,`__callStatic()`, `__get()`, `__set()`, `__isset()`, `__unset()`, `__sleep()`, `__wakeup()`, `__serialize()`, `__unserialize()`, `__toString()`, `__invoke()`, `__set_state()`, `__clone()`, and `__debugInfo()`.
+
+**Magic method docs: [https://www.php.net/language.oop5.magic](https://www.php.net/language.oop5.magic)**
+
+## Namespaces
+
+- used to help avoid naming conflicts between different developers/environments
+- PSR-4 provides recommended namespace usage/conventions
+- provide the ability to shorten or alias particularly long names, for the sake of readability
+- provide a way of grouping related classes, functions etc.
+- e.g. namespace declaration:
+
+```php
+<?php
+namespace MyProject;
+
+const CONNECT_OK = 1;
+class Connection { /* ... */ }
+function connect() { /* ... */ }
+
+?>
+```
+
+### PSR-4
+
+**Docs: [https://www.php-fig.org/psr/psr-4/](https://www.php-fig.org/psr/psr-4/)**
+
+- specification for autoloading classes from file pahts
+- Fully qualified class name example: `\<NamespaceName>(\<SubNamespaceNames>)*\<ClassName>`
+  - MUST have top-level namespace i.e. `\<NamespaceName>`
+  - MAY have one or more sub-namespaces i.e. `\<SubNamespaceNames>`
+  - MUST have a terminating class name i.e. `\<ClassName>`
+- case-sensitive
