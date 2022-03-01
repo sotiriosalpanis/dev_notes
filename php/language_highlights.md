@@ -159,3 +159,19 @@ function connect() { /* ... */ }
   - MAY have one or more sub-namespaces i.e. `\<SubNamespaceNames>`
   - MUST have a terminating class name i.e. `\<ClassName>`
 - case-sensitive
+
+## Standard PHP Library (SPL)
+
+- provides a collection of classes and interfaces, primarily commonly needed datastructure classes (e.g. stack, queue etc.) and iterators
+
+**Docs: [https://www.php.net/book.spl](https://www.php.net/book.spl)**
+
+## Command Line Interface (CLI)
+
+- useful for automating common tasks, and running your app's code directly without a web GUI
+- e.g. `php -i` will return your PHP configuration
+
+## Xdebug
+
+- recommended debug tool
+<!-- todo: add Xdebug installation/config guidelines -->
