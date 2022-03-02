@@ -25,7 +25,7 @@ class Database
 class MysqlAdapter {}
 ```
 
-2. Refactred using Dependency Injection to loosen the dependency:
+2.Re-factored using Dependency Injection to loosen the dependency:
 
 ```php
 <?php
