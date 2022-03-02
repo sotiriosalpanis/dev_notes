@@ -205,3 +205,15 @@ foreach ($periodIterator as $date) {
     3. Behavioral: common communication patterns between objects
 
 **Full guidance/docs: [https://phptherightway.com/#:~:text=https%3A//designpatternsphp.readthedocs.io/](https://phptherightway.com/#:~:text=https%3A//designpatternsphp.readthedocs.io/)**
+
+## UTF-8
+
+**Guide here: [https://phptherightway.com/#php_and_utf8](https://phptherightway.com/#php_and_utf8)**
+
+## Internationalisation (i18n) and Localisation (l10n)
+
+- Internationalisation - orgnaise code so that it can be easily adapted for different languages/regions
+- Localisation - how adaptation to new languages/regions is managed
+- Pluralisation - local rules for making words plural
+
+**Full guide here: [https://phptherightway.com/#i18n_l10n](https://phptherightway.com/#i18n_l10n)**
