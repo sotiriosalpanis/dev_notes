@@ -62,4 +62,4 @@ ddev drush site:install --account-name=admin --account-pass=password
 ## Launch and login
 
 - use `ddev launch` to launh your new drupal site in a browser, and log in
-- if brwoser doesn't launch automatically `ddev describe` will return the URL
+- if browser doesn't launch automatically `ddev describe` will return the URL

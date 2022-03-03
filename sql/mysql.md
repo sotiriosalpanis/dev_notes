@@ -10,7 +10,7 @@ brew install mysql
 
 ## Running the server
 
-1. Daemon mode: runs until specifically stopped
+1.touch DrDaemon mode: runs until specifically stopped
 
 ```sh
 brew services start mysql
@@ -20,8 +20,7 @@ brew services start mysql
 brew services stop mysql
 ```
 
-2. Manual: stop/start mysql server a required, rebooting the machine will stop the server and not restart it
-
+2.Manual: stop/start mysql server a required, rebooting the machine will stop the server and not restart it
 
 ```sh
 mysql.server start
