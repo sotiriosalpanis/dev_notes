@@ -21,7 +21,7 @@
 ## Designating a front page
 
 1. **Manage menu:** *Configuration > System > basic site settings*
-2. under *Front page* replace */node* with the new front page's path i.e. */home* 
+2. under *Front page* replace */node* with the new front page's path i.e. */home*
 
 ## Menu
 
