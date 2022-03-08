@@ -4,6 +4,8 @@ A list of useful commands, organised in alphabetical order by language/framework
 
 ## bash
 
+- **create a file:** `touch filename`
+- **create a file with some text added:** `echo "some text" > filename`
 - **delete a file:** `rm filename.txt`
 - **delete an empty directory:** `rm -r directory_name`
 - **delete a non-empty directory:** `rm -rf directory_name`
