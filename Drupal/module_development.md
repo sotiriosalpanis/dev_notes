@@ -1,2 +1,0 @@
-# Drupal module development
-
