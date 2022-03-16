@@ -7,6 +7,7 @@ A list of useful commands, organised in alphabetical order by language/framework
 - **create a file:** `touch filename`
 - **create a file with some text added:** `echo "some text" > filename`
 - **delete a file:** `rm filename.txt`
+- **delete all files:** `rm *`
 - **delete an empty directory:** `rm -r directory_name`
 - **delete a non-empty directory:** `rm -rf directory_name`
 - **make bash file executable:** `chmod u+x filename.sh`
@@ -23,3 +24,7 @@ A list of useful commands, organised in alphabetical order by language/framework
 ```php
 $result = $repository?->getUser(5)?->name;
 ```
+
+### ssh
+
+- connect to server `ssh -i {path_to_ssh_credentials} -t {server_address}` e.g. `ssh -i $HOME/.ssh/cogapp/images -t ubuntu@54.154.28.242`
