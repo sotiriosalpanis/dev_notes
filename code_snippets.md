@@ -28,3 +28,7 @@ $result = $repository?->getUser(5)?->name;
 ### ssh
 
 - connect to server `ssh -i {path_to_ssh_credentials} -t {server_address}` e.g. `ssh -i $HOME/.ssh/cogapp/images -t ubuntu@54.154.28.242`
+
+### scp
+
+- copy filelist to local file dir `scp -i $HOME/.ssh/cogapp/images ubuntu@54.154.28.242:/images/nms/filelist.txt {path to local dir}`
